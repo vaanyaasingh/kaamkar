@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #5ce1e6;
+  --background-color: white;
+  --text-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  color: var(--text-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
   color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #46b4c1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.featured-projects {
+  padding: 20px;
+}
+
+h2, h3 {
+  color: var(--primary-color);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff; /* White background */
+  border-bottom: 2px solid #5ce1e6; /* Accent color */
+}
+
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000; /* Black text */
+}
+
+.navbar-nav .nav-link {
+  color: #000000; /* Black links */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #5ce1e6; /* Highlight color */
+}
+
+/* General Body Styling */
+body {
+  background-color: #f8f9fa; /* Light background */
+  color: #000000; /* Black text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5ce1e6; /* Accent headings */
 }
