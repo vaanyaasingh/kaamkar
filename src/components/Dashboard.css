@@ -1,0 +1,139 @@
+/* Dashboard.css */
+.dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+    min-height: 100vh;
+  }
+  
+  .dashboard-title {
+    color: #5ce1e6;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .stat-card {
+    background-color: rgba(92, 225, 230, 0.1);
+    border: 1px solid #5ce1e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .stat-icon {
+    color: #5ce1e6;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .stat-info h3 {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-info p {
+    color: #5ce1e6;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .active-projects h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects-list {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: rgba(92, 225, 230, 0.1);
+    border: 1px solid #5ce1e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-header h3 {
+    color: white;
+    margin: 0;
+  }
+  
+  .status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+  }
+  
+  .status-badge.in-progress {
+    background-color: rgba(92, 225, 230, 0.2);
+    color: #5ce1e6;
+  }
+  
+  .progress-section {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .progress-bar {
+    flex: 1;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #5ce1e6;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-section span {
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+  }
+  
+  .earning {
+    color: #5ce1e6;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dashboard {
+      padding: 1rem;
+    }
+    
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
